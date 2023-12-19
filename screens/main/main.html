@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chromebook Manager</title>
+
+  <link rel="stylesheet" href="../../assets/css/bulma.min.css" />
+</head>
+<body>
+  <section class="section">
+    <h1 class="title">Loaner Chromebook Manager</h1>
+
+    <div class="box mt-3">
+      <form>
+        <button class="button is-primary" id="btnGet">Refresh</button>
+        <input type="hidden" id="Asset Tag Number" value="" />
+        <input type="hidden" id="Latitude" value="" />
+        <input type="hidden" id="Longitude" value="" />
+        <input type="hidden" id="LoRa" value="" />
+        <input type="hidden" id="LastSeen" value="" />
+        <input type="hidden" id="MotionType" value="" />
+        <input type="hidden" id="cbId" value="" />
+      </form>
+    </div>
+
+    <div class="box mt-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Device ID</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>LoRa WAN Address</th>
+            <th>Last Seen</th>
+            <th>Motion Type</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbChromebooks">
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="mainView.js"></script>
+
+</body>
+</html>
