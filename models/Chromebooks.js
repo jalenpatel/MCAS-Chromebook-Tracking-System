@@ -26,7 +26,7 @@ class Chromebooks {
 
     res = res.map((chromebook) => {
       return {
-        id: chromebook._id.toHexString(),
+        id: chromebook._id,
         assetTagNumber: chromebook.assetTagNumber,
         Name: chromebook.Name,
         Latitude: chromebook.Latitude,
