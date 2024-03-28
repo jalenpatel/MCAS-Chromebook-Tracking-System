@@ -58,7 +58,7 @@ class Chromebooks {
     console.log(`Chromebook.js > deleteChromebook: ${id}`);
 
     const chromebooks = await this.#getCollection();
-    const res = await chromebooks.deleteOne({ _id: new ObjectId(id) });
+    const res = await chromebooks.deleteOne({ _id: id });
     return res.deletedCount > 0;
   };
 }
